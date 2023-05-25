@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - "lts/*"
+  - "node"
+  - "stable"
+before_install:
+  - "npm install -g mocha"
+script: 
+  - "mocha test/url.js"
