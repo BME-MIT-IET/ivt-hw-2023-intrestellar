@@ -1,0 +1,53 @@
+{
+  "name": "domurl",
+  "version": "2.3.4",
+  "description": "Lightweight URL manipulation with JavaScript.",
+  "homepage": "https://github.com/Mikhus/jsurl",
+  "keywords": [
+    "url",
+    "querystring"
+  ],
+  "categories": [
+    "Utilities"
+  ],
+  "jam": {
+    "main": "url.min.js",
+    "include": [
+      "url.js",
+      "url.min.js",
+      "README.md"
+    ]
+  },
+  "main": "url.min.js",
+  "scripts": {
+    "test": "mocha ./test/url.js",
+    "minify": "uglifyjs url.js -o url.min.js --compress --mangle"
+  },
+  "maintainers": [
+    {
+      "name": "Mykhailo Stadnyk",
+      "email": "mikhus@gmail.com"
+    }
+  ],
+  "url": {
+    "bugs": "https://github.com/Mikhus/domurl/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mikhus/domurl.git"
+  },
+  "github": "https://github.com/Mikhus/domurl",
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.1.2",
+    "chai": "^4.3.7",
+    "jscs": "^3.0.7",
+    "jshint": "^2.11.0",
+    "mocha": "^7.1.1",
+    "uglify-js": "^3.8.1"
+  },
+  "dependencies": {
+    "cucumber": "^6.0.7",
+    "uglify-es": "^3.3.9"
+  }
+}
